@@ -18,7 +18,6 @@ func NewBlockChain() *BlockChain {
 //5. 添加区块
 func (bc *BlockChain) AddBlock(data string) {
 	//如何获取前区块的哈希呢？？
-
 	//获取最后一个区块
 	lastBlock := bc.blocks[len(bc.blocks)-1]
 	prevHash := lastBlock.Hash
